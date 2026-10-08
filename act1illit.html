@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>act 1-ILLIT GAME˚₊‧꒰ა</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+ <style>
+        h1, h2, h3, h4, h5, h6 {
+      font-family: 'Coral Pixels', cursive; }
+      body {
+        font-family: 'silkscreen', cursive;
+        background-image :url('https://file.garden/aqbWI8tvfiUwv0tT/4b4271d9978caa31df7f6a64050a41e2.jpg');
+         background-size:auto;
+         background-repeat: no-repeat; 
+         background-position:top;
+         background-color:rgb(199, 167, 167);
+      }
+      .yunah-line1 {
+        padding:30px;
+        border:dotted;
+        margin-top: 420px;
+        background-color:rgba(195, 230, 241, 0.582)
+      }
+
+ </style>
+ </head>
+<body>
+<div style="display: flex; flex-direction: column; align-items: flex-end; width: 100%;">
+     <button onclick="nextline()" style="margin-top: 420px; margin-right: 20px;">⮞</button>
+        <div class="yunah-line1" id="line1yunah" style="width: 100%; box-sizing: border-box;">
+      <h2>Yunah:</h2> <p>huh....</p>
+    </div>
+</div>
+</div>
+
+</body>
+<script>
+  // This counter remembers how many times the player clicked the button
+  let clicks = 0;
+
+  function nextline() {
+    clicks = clicks + 1;
+    // CLICK 1: updates everything inside the box altogether
+    if (clicks === 1) {
+      document.getElementById("line1yunah").innerHTML = "<h2>Wonhee:</h2> <p>what are <b>you</b> doing here....</p>";
+    }
+    else if (clicks === 2) {
+      document.getElementById("line1yunah").innerHTML = "<h2>System</h2> <p>*they had sounded tired and sleepy as if they always were*</p>";
+    }
+    else if (clicks === 3) {
+      document.getElementById("line1yunah").innerHTML = "<h2>Wonhee:</h2> <p>You kind of look familliar</p>";
+    }
+    else if (clicks === 4) {
+      document.getElementById("line1yunah").innerHTML = "<h2>Yunah</h2> <p>No theyre not.. everyone is <b>always</b> familliar for no reason..</p>";
+    }
+     else if (clicks === 5) {
+      document.getElementById("line1yunah").innerHTML = "<h2>Wonhee:</h2> <p>oh right..oh well.</p>";
+    }
+     else if (clicks === 6) {
+      document.getElementById("line1yunah").innerHTML = "<h2>Wonhee:</h2> <p>Don't you think you remember your name, Dear?</p>";
+    }
+     else if (clicks === 7) {
+      document.getElementById("line1yunah").innerHTML = "<h2>You:</h2> <p>my name? oh well thats easy-...</p>";
+    }
+     else if (clicks === 8) {
+      document.getElementById("line1yunah").innerHTML = "<h2>you:</h2> <p>I....dont..remember my name..</p>";
+    }
+    else if (clicks === 9) {
+      document.getElementById("line1yunah").innerHTML = "<h2>Wonhee:</h2> <p>*chuckle* HAH..expected...</p>";
+    }
+    else if (clicks === 10) {
+      document.getElementById("line1yunah").innerHTML = "<h2>You:</h2> <p>T-then how do you have your names then?</p>";
+    }
+    // ➡️ HOW TO MAKE MORE LINES YOURSELF:
+    // 1. Copy the code block below.
+    // 2. Paste it right here (underneath click 3, but BEFORE the closing curly bracket }).
+    // 3. Change the number to 4, 5, 6, etc.
+    
+    /* 
+    else if (clicks === 4) {
+      document.getElementById("line1yunah").innerHTML = "<h2>CHARACTER NAME:</h2> <p>THE DIALOGUE LINE GOES HERE</p>";
+    }
+    */
+  }
+</script>
+</html>

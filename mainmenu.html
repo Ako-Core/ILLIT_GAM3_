@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+ 
+  <title>ILLIT GAME-menu˚₊‧꒰ა ☆ ໒꒱ ‧₊˚</title>  
+<style>
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Coral Pixels', cursive; }
+      body {
+        font-family: 'silkscreen', cursive;
+        background-image: url('https://file.garden/aqbWI8tvfiUwv0tT/%E2%9C%B0illit%E2%9C%B0.jpg');
+      }
+      .menu {
+         background-image: url('https://file.garden/aqbWI8tvfiUwv0tT/illit/e7df76d1885c6651147f92cf379e851b.jpg');
+         background-position:center;
+        padding: 15px;
+        border:dotted;
+        margin-left:850px;
+        height: 550px; 
+      }
+      .buttons-group  {
+        display: flex; 
+        flex-direction:column;
+        gap:20px;
+        font-family:silkscreen, cursive;
+        font-size:30px;
+        margin:0 auto;
+        width:80%;
+      }
+      .buttons-group a{
+          display: flex; 
+        flex-direction:column;
+        gap:20px;
+        font-family:silkscreen, cursive;
+        font-size:30px;
+        margin:0 auto;
+        width:80%;
+      }
+      .buttons-group button {
+        font-family:silkscreen, cursive;
+        background-color:rgb(56, 43, 43);
+        color:#ffffff
+      }
+</style>
+</head>
+<body>
+  <div class="menu">
+   <h1>ILLIT GAME</h1> 
+   <p> disclaimer:this is a fanmade game only.</p>
+   <h4>MAIN MENU</h4>
+   <div class="buttons-group">
+    <a href="file:///C:/Users/Esraa/Desktop/farida/FaridAAsgamz_/ILLIT-gam3/act1illit.html">
+     <button class="menu-btn">START</button>
+     </a>
+     <a href="file:///C:/Users/Esraa/Desktop/farida/FaridAAsgamz_/ILLIT-gam3/goback.html">
+     <button class="menu-btn">EXIT</button>
+     </a>
+   </div>
+  </div>
+</body>
+</html>
+<script>
+
+  const audio = new Audio('https://file.garden/aqbWI8tvfiUwv0tT/ILLIT%20-%20Tick-Tack%20(Instrumental).mp3');
+  audio.loop = true;
+
+  function startmusic() {
+    audio.play().catch(err => {
+      
+    });
+  }
+
+  startmusic();
+
+  window.addEventListener('mousemove', startmusic, { once: true });
+  window.addEventListener('mousedown', startmusic, { once: true });
+  window.addEventListener('click', startmusic, { once: true });
+  window.addEventListener('keydown', startmusic, { once: true });
+  window.addEventListener('touchstart', startmusic, { once: true });
+</script>
